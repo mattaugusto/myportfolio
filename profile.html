@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>JS.W3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"> </script>
+  </head>
+  <body>
+    <header class="w3-container w3-light-grey">
+      <h1 class="w3-center w3-animate-left" id="title">MyPortfolio</h1>
+      <h6 class="w3-center w3-animate-left" id="subtitle">PROFILE</h6>
+      <div class="w3-bar w3-light-grey">
+        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
+        <a href="profile.html" class="w3-bar-item w3-button w3-blue"><i class="fa fa-user-o"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+     </div>
+    </header>
+
+    <div class="w3-row w3-card w3-blue" id="first-card">
+      
+      <div class="w3-third w3-card-4">
+        <img src="assets/img/resize/developer.jpg" id="photo"
+        onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-opacity"> 
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+          <div class="w3-modal-content w3-animate-zoom"> 
+            <img class="w3-modal-content" src="assets/img/origin/pexels-photo-160107.jpeg">
+          </div>
+        </div> 
+        <div class="w3-container">
+          <h5>Developer</h5>    
+        </div> 
+      </div>
+
+      <div class="w3-third w3-card-4" id="photocard">
+        <img src="assets/img/resize/photographer.jpg" id="photo"
+        onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-opacity"> 
+        <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+          <div class="w3-modal-content w3-animate-zoom"> 
+            <img class="w3-modal-content" src="assets/img/origin/pexels-photo-108148.jpeg">
+          </div>
+        </div>
+        <div class="w3-container">
+          <h5>Photographer</h5>    
+        </div>       
+      </div> 
+
+    </div>
+      
+    <footer class="w3-container w3-light-grey">
+      <p>Footer information goes here</p>
+    </footer>
+  </body>
+</html>
