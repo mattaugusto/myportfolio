@@ -1,0 +1,50 @@
+#title{
+	margin-bottom: 0px;
+}
+#subtitle{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#ct{
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#form{
+	padding: 5%;
+
+}
+#signin{
+	position: relative;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+#entrar{
+	position:relative;
+    top:50%; 
+    left:41%;
+}
+#signup{
+	margin-bottom: 3px;
+	padding-left: 8px !important;
+	padding-right: 8px!important;
+}
+footer{
+	padding-top: : 10px;
+	text-align: center;
+}
+/* Erros */
+
+#emailError, #senhaError{
+      display: none;
+      color: rgba(255, 0, 0, 0.68);
+      font-family: sans-serif;
+      margin-top: -5px;
+}

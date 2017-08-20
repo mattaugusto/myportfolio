@@ -65,9 +65,9 @@ input[type=text], input[type=password] {
 /* começo do sign up form
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 7px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;

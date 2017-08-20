@@ -1,0 +1,60 @@
+#title{
+	margin-bottom: 0px;
+}
+#subtitle{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#ct{
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#form{
+	padding: 5%;
+}
+footer{
+	padding-top: : 10px;
+	text-align: center;
+}
+
+/* CAMPOS */
+#nome, #email, #senha, #confirmarsenha{
+	width: 75%;
+}
+#profissao{
+	width: 35%;
+	margin-bottom: 8px;
+}
+#telefone{
+	width: 25%;
+}
+#cep{
+	width: 18%;
+}
+#uf{
+	width: 7%;
+}
+#rua,#cidade{
+	width: 50%;
+}
+
+input[type=text], input[type=password]{
+    margin-bottom: 8px;
+    padding-top: 4px;
+}
+/* CHECKBOX */
+#checkbox{
+	margin-left: 5%;
+	
+}
+#termos{
+	margin-left: 5%;
+	margin-bottom: 3%;
+}
+/* ERROS */
+#cepError, #emailError, #senhaError, #senharepeatError {
+      display: none;
+      color: rgba(255, 0, 0, 0.68);
+      font-family: sans-serif;
+      margin-top: -5px;
+}

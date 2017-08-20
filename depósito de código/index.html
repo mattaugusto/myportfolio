@@ -23,6 +23,57 @@
         <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
         <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
         <a href="signin.html" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i></a>
+        
+        <!-- Button to open the modal -->
+        <button class="w3-button" onclick="document.getElementById('id01').style.display='block'">Cadastre-se</button>  
+        <!-- The Modal (contains the Sign Up form) -->
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+              <div class="container-modal-wrap">
+                <div class="modal-left">
+                  <label><b>E-mail</b></label>
+                  <input type="text" id="email" placeholder="Seu Email" name="email" required>
+                  <div id="emailError">O Email informado é invalido.</div>
+
+                  <label><b>Password</b></label>
+                  <input type="password" id="password" placeholder="Password" name="psw" required>
+                  <div id="passwordError">Sua senha precisa ter ao menos 8 caracteres, sendo pelo menos um numero e uma letra maiúscula.</div>
+
+                  <label><b>Repita o Password</b></label>
+                  <input type="password" id="passwordrepeat" placeholder="Repita o Password" name="psw-repeat" required>
+                  <div id="passwordrepeatError">Senha diferente</div>
+                </div>
+
+                <div class="modal-right">
+
+                  <label><b>Dados Opcionais</b></label><br />
+                  <label><b>Telefone</b></label>
+                  <input type="text" id="tel" placeholder="Telefone">
+                  <label><b>CEP</b></label>
+                  <input type="text" id="cep" placeholder="CEP">
+                  <div id="cepError">O CEP informado é invalido.</div>
+                  <label><b>Rua</b></label>
+                  <input type="text" id="rua" placeholder="Rua">
+                  <label><b>Estado</b></label>
+                  <input type="text" id="state" placeholder="Estado">
+                  <label><b>Cidade</b></label>
+                  <input type="text" id="city" placeholder="Cidade">
+                </div>
+              </div>
+
+              <input type="checkbox" checked="checked"> Lembre-me
+              <p>Criando uma conta você concorda com nossos <a href="#">Termos & Privacidade</a>.</p>
+
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                <button type="submit" class="signupbtn">Cadastrar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+       
       </div>
 
     </header>

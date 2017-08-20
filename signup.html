@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+	    <title>JS.W3</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="assets/css/signup.css">
+	    <script type="text/javascript"> </script>
+	</head>
+	<body>
+		<header class="w3-container w3-light-grey">
+	      	<h1 class="w3-center w3-animate-left" id="title">MyPortfolio</h1>
+	      	<h6 class="w3-center w3-animate-left" id="subtitle">CADASTRE-SE</h6>
+	      	<div class="w3-bar w3-light-grey">
+		        <a href="signin.html" class="w3-bar-item w3-button w3-red"><i class="fa fa-arrow-left"></i></a>
+		    </div> 
+    	</header>
+    		<div class="w3-red w3-row">
+    			<div class="w3-col m1 l3 w3-red"><p></p></div>
+			 	<div id="ct" class="w3-col m10 l6 w3-white w3-animate-left">
+			 		<h1 class="w3-center w3-animate-left" id="title">Conta</h1>
+			 		<form id="form">
+			 			
+			 			<label>Nome</label>
+						<input id="nome" type="text" class="w3-input" type="text" maxlength="60">
+
+						<select id="profissao" class="w3-select" name="option">
+							<option value="" disabled selected>Profissão</option>
+							<option value="Desenvolvedor">Desenvolvedor</option>
+							<option value="Fotógrafo">Fotógrafo</option>
+						</select>
+						<p>
+						<label>Email</label>
+						<input id="email" type="text" class="w3-input" type="text" maxlength="60">
+						<div id="emailError">Email informado é inválido.</div>
+						
+						<label>Senha</label>
+						<input id="senha" type="password" class="w3-input" type="text" maxlength="60">
+						<div id="senhaError">Senha precisa ter no mínimo uma letra maiúscula e um número.</div>
+						
+						<label>Confirme a Senha</label>
+						<input id="confirmarsenha" type="password" class="w3-input" type="text" maxlength="60">
+						<div id="senharepeatError">Senhas diferentes.</div>
+
+					</form>
+
+					<h1 class="w3-center w3-animate-left" id="title">Informações Adicionais</h1>
+					<form id="form">
+					<label>Telefone</label>
+						<input id="telefone" type="text" class="w3-input" type="text" maxlength="13">
+
+						<label>CEP</label>
+						<input id="cep" type="text" class="w3-input" type="text" maxlength="10">
+						<div id="cepError">O CEP informado é invalido.</div>
+
+						<label>Rua</label>
+						<input id="rua" type="text" class="w3-input" type="text" maxlength="35">
+
+						<label>UF</label>
+						<input id="uf" type="text" class="w3-input" type="text" maxlength="2">
+
+						<label>Cidade</label>
+						<input id="cidade" type="text" class="w3-input" type="text" maxlength="35">
+					</form>
+
+					<input id="checkbox" type="checkbox" checked="checked"> Lembrar-me
+					<p id="termos">Cadastrando-se você concorda com nossos <a href="#">Termos & Privacidade</a>.</p>
+
+					<div class="w3-row">
+						<button id="limpar" class="w3-col s6 w3-center w3-button w3-gray">Limpar</button>
+						<button id="cadastrar" class="w3-col s6 w3-center w3-button w3-green">Cadastrar</button>
+					</div>
+						
+					
+              	</div>
+              	<div class="w3-col m1 l3 w3-red"><p></p></div>
+				</div>
+		 	</div>
+	</body>
+	<footer class="w3-container w3-light-grey">
+      <p>Footer information goes here</p>
+    </footer>
+    <script type="text/javascript" src="assets/js/signup.js"></script>
+</html>
