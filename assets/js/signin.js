@@ -1,9 +1,10 @@
+// LOGIN
 const email = document.querySelector('#email')
 const senha = document.querySelector('#senha')
 const entrar = document.querySelector('#entrar')
 
-entrar.onclick = function()
-{
+// AÇÃO BOTÃO ENTRAR
+entrar.onclick = () => {
 	let emailverify = email.value
   	let senhaverify = senha.value
 	if(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(emailverify))
