@@ -28,16 +28,16 @@ O site possuirá essencialmente 6 páginas dentre as quais:
 
 *Home Page: Possui a descrição do aplicativo.
 
-*Página do Perfil: Um exemplo de como o Portfolio do usuario será.
+* Página do Perfil: Um exemplo de como o Portfolio do usuario será.
 
-*Página de Sugestões: Ao preencher os campos e clicar em enviar, um e-mail é mandado aos desenvolvedores para possíveis mudanças no aplicativo. 
+* Página de Sugestões: Ao preencher os campos e clicar em enviar, um e-mail é mandado aos desenvolvedores para possíveis mudanças no aplicativo. 
 Haverá um campo de pesquisa no topo da página e ao lado colocaremos um filtro de busca para caso o leitor queira especificar mais ainda as notícias apresentadas
 
-*Página de Login: Aqui é feito o login, caso esteja cadastrado
+* Página de Login: Aqui é feito o login, caso esteja cadastrado
 
-*Página de Cadastro: O formulário de cadastro de novos usuários que utiliza a API [ViaCEP][viacep] para ajudar a completar rapidamente as informações.
+* Página de Cadastro: O formulário de cadastro de novos usuários que utiliza a API [ViaCEP][viacep] para ajudar a completar rapidamente as informações.
 
-*Página do Administrador: Lista os dados dos usuários cadastrados por meio do [IndexedDB][indexeddb], através da extensão [Tablesorter](http://tablesorter.com/docs/) para o Javacript.
+* Página do Administrador: Lista os dados dos usuários cadastrados por meio do [IndexedDB][indexeddb], através da extensão [Tablesorter](http://tablesorter.com/docs/) para o Javacript.
 
 
 # Recursos da API  
