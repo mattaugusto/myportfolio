@@ -185,18 +185,10 @@ cadastrar.onclick = () => {
       if(!db.objectStoreNames.contains('usuarios'))
       {
         var objStore = db.createObjectStore('usuarios', {autoIncrement:true});
-        objStore.add(usuario);
-        alert("Cadastro concluído!")
-      }
-      else
-      {
-        var db = event.target.result;
-        var transaction = db.transaction('usuarios', 'readwrite')
-        var usuarios = transaction.objectStore('usuarios')
-        usuarios.add(usuario)
-        alert("Cadastro concluído!")   
+        alert("Tabela Criada!")
       }
     }
+		
     request.onsuccess = function (event)
     {
       var db = event.target.result;
