@@ -37,14 +37,14 @@ Haverá um campo de pesquisa no topo da página e ao lado colocaremos um filtro 
 
 *Página de Cadastro: O formulário de cadastro de novos usuários que utiliza a API [ViaCEP][viacep] para ajudar a completar rapidamente as informações.
 
-*Página do Administrador: Lista os dados dos usuários cadastrados por meio do [IndexedDB][indexeddb] através da extensão [Tablesorter](http://tablesorter.com/docs/) para o Javacript
+*Página do Administrador: Lista os dados dos usuários cadastrados por meio do [IndexedDB][indexeddb] através da extensão [Tablesorter](http://tablesorter.com/docs/) para o Javacript.
 
 
 # Recursos da API  
 
 * O IndexedDB é um banco de dados noSQL que fica diretamente no browser, o que possibilita a inserção de dados sem a necessidade de um banco local aberto.
 * ViaCEP é uma API que resgata informações sobre UF, Cidade, Rua, dentre outros dados, através de um número de CEP.
-* Tablersorter é uma extensão Javascript que serve para criar uma tabela mais organizada, com possibilidade de tema, em que é possível organizar os dados de acordo com colunas da tabela.
+* Tablesorter é uma extensão Javascript que serve para criar uma tabela mais organizada, com possibilidade de tema, em que é possível organizar os dados de acordo com colunas da tabela.
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
