@@ -26,7 +26,7 @@ A inspiração veio de diferentes sites: O login dos usuários foi inspirado no 
 
 O site possuirá essencialmente 6 páginas dentre as quais:
 
-*Home Page: Possui a descrição do aplicativo.
+* Home Page: Possui a descrição do aplicativo.
 
 * Página do Perfil: Um exemplo de como o Portfolio do usuario será.
 
