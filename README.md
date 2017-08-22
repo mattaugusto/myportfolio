@@ -1,8 +1,8 @@
-# myportfolio
+﻿# myportfolio
 
 # Descrição
 
-Este é um projeto de um aplicativo de criação de portfólios. E tem como principal característica a exibição dos dados do usuário juntamente com as imagens de seus trabalhos.
+Este é um projeto de um aplicativo de criação de portfólios voltado especialmente para Desenvolvedores Web e Fotógrafos, criado na intenção de que seja possível enviar tanto os trabalhos do Desenvolvedor, quanto do Fotógrafo. Sendo possível também adicionar os dados do profissional para contato.
  
 # Objetivo
 
@@ -37,11 +37,14 @@ Haverá um campo de pesquisa no topo da página e ao lado colocaremos um filtro 
 
 *Página de Cadastro: O formulário de cadastro de novos usuários que utiliza a API [ViaCEP][viacep] para ajudar a completar rapidamente as informações.
 
-*Página do Administrador: Vê os dados dos usuários cadastrados por meio do [Indexed DB][indexeddb]
+*Página do Administrador: Lista os dados dos usuários cadastrados por meio do [IndexedDB][indexeddb] através da extensão [tablesorter][tablesorter] para o Javacript
 
 
 # Recursos da API  
 
+* O IndexedDB é um banco de dados noSQL que fica diretamente no browser, o que possibilita a inserção de dados sem a necessidade de um banco local aberto.
+* ViaCEP é uma API que resgata informações sobre UF, Cidade, Rua, dentre outros dados, através de um número de CEP.
+* Tablersorter é uma extensão Javascript que serve para criar uma tabela mais organizada, com possibilidade de tema, em que é possível organizar os dados de acordo com colunas da tabela.
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
@@ -51,4 +54,5 @@ Haverá um campo de pesquisa no topo da página e ao lado colocaremos um filtro 
    [foto1]: <Prototipo01.jpg>
    [viacep]: <https://viacep.com.br/>
    [indexeddb]: <https://developer.mozilla.org/pt-BR/docs/IndexedDB/>
+   [tablesorter] : <http://tablesorter.com/docs/>
    
