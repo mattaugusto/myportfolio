@@ -42,7 +42,7 @@ footer{
 }
 /* Erros */
 
-#emailError, #senhaError{
+#incorretos{
       display: none;
       color: rgba(255, 0, 0, 0.68);
       font-family: sans-serif;

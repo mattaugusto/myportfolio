@@ -1,6 +1,7 @@
 // CONTA
 const nome = document.querySelector('#nome')
 const profissao = document.querySelector('#profissao')
+const profissaoError = document.querySelector('#profissaoError')
 const email = document.querySelector('#email')
 const emailError = document.querySelector('#emailError')
 const senha = document.querySelector('#senha')
@@ -66,10 +67,32 @@ String.prototype.toCamelCase = function()
 // AÇÕES DOS BOTÕES
 cadastrar.onclick = () => {	
   let flagerror = 0
+  let nomeverify = nome.value
 	let emailverify = email.value
   let senhaverify = senha.value
   let senharepeatverify = confirmarsenha.value
 
+  /* TRATAMENTO DA STRING NOME */
+  if(!/^[a-zA-Z'ãáàéàñ]*$/.test(nomeverify))
+  {
+    flagerror = 1
+    nome.style.border = '1px solid #f00'
+    nome.style.backgroundColor = 'rgba(255, 0, 0, .1)'
+    nomeError.style.display = 'block'
+    nomeError.style.outline = 'none'
+  }
+
+  /* TRATAMENTO DA STRING PROFISSAO */
+  if(profissao.value == '')
+  {
+    flagerror = 1
+    profissao.style.border = '1px solid #f00'
+    profissao.style.backgroundColor = 'rgba(255, 0, 0, .1)'
+    profissaoError.style.display = 'block'
+    profissaoError.style.outline = 'none'
+  }
+
+  /* TRATAMENTO DA STRING EMAIL */
   if(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(emailverify))
 	{
  		email.style.border = '1px solid green'
@@ -84,11 +107,12 @@ cadastrar.onclick = () => {
   	emailError.style.display = 'block'
   	emailError.style.outline = 'none'
 	}
+
+  /* TRATAMENTO DA STRING SENHA */
 	if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(senhaverify))
 	{
   	senha.style.border = '1px solid green'
   	senha.style.backgroundColor = 'rgba(134, 244, 66, .1)'
-  	//pass.style.display = 'none'
 	}
 	else
   {
@@ -98,6 +122,8 @@ cadastrar.onclick = () => {
   	senhaError.style.display = 'block'
   	senhaError.style.outline = 'none'
 	}
+
+  /* TRATAMENTO DA STRING CONFIRMAR SENHA */
 	if((senhaverify === senharepeatverify) && (senhaverify !=''))
 	{	
   	confirmarsenha.style.border = '1px solid green'
@@ -112,7 +138,9 @@ cadastrar.onclick = () => {
   	senharepeatError.style.display = 'block'
   	senharepeatError.style.outline = 'none'
 	}
-	if(flagerror === 0) // SE NÃO OCORREU ERRO ALGUM
+
+  /* SE TUDO OCORREU BEM, ENTÃO CADASTRE */
+	if(flagerror === 0) 
 	{
     let nomeCamel = (nome.value).toCamelCase()
   	let senhaHash = (senha.value).hashCode().toString()
@@ -142,10 +170,15 @@ cadastrar.onclick = () => {
 		 console.log('Este navegador não suporta IndexedDB');
 		 return;
 	  }
+
     /* CRIANDO/ABRINDO O BANCO */
 	  var request = indexedDB.open('Usuarios', 1) 
-		
-    /* AÇÃO ATIVADA QUANDO O BANCO NÃO EXISTE */
+	
+    request.onerror = function (event){
+      alert("Database error: " + event.target.errorCode)
+    }
+
+    /* AÇÕES NA ABERTURA DO BANCO */
     request.onupgradeneeded = function (event)
     {
       var db = event.target.result;
@@ -153,21 +186,39 @@ cadastrar.onclick = () => {
       {
         var objStore = db.createObjectStore('usuarios', {autoIncrement:true});
         objStore.add(usuario);
+        alert("Cadastro concluído!")
+      }
+      else
+      {
+        var db = event.target.result;
+        var transaction = db.transaction('usuarios', 'readwrite')
+        var usuarios = transaction.objectStore('usuarios')
+        usuarios.add(usuario)
+        alert("Cadastro concluído!")   
       }
     }
-
-    /* AÇÃO ATIVADA QUANDO O BANCO JÁ EXISTE */
     request.onsuccess = function (event)
     {
       var db = event.target.result;
-      var transaction = db.transaction('usuarios', 'readwrite')
-      var usuarios = transaction.objectStore('usuarios')
-      usuarios.add(usuario)
+      if(!db.objectStoreNames.contains('usuarios'))
+      {
+        var objStore = db.createObjectStore('usuarios', {autoIncrement:true});
+        objStore.add(usuario);
+        alert("Cadastro concluído!")
+      }
+      else
+      {
+        var db = event.target.result;
+        var transaction = db.transaction('usuarios', 'readwrite')
+        var usuarios = transaction.objectStore('usuarios')
+        usuarios.add(usuario)
+        alert("Cadastro concluído!")   
+      }
     }
   }
-  else
+  else /* SE CASO NÃO TENHA OCORRIDO BEM, ENTÃO INFORME */
   {
-  	console.log("Erro na inserção, não é possível persistir!")
+  	alert("Erro no preenchimento dos dados!")
   }	
 }
 	

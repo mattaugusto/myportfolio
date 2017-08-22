@@ -8,27 +8,7 @@
 #text-content{
 	padding: 0px;
 }
-#first-card{
-	margin-top: 0px;
-	padding: 20px;
-}
-#card-text{
-	margin-top: 0px;
-}
-#second-card{
-	margin-top: 0px;
-	padding: 20px;
-	width: 50%;
-}
-#third-card{
-	margin-top: 0px;
-	padding: 20px;
-	width: 50%;
-}
-#photo{
-	width: 100%;
-}
-#photocard{
-	position: relative;
-	left: 5%;
+#ct{
+	margin-top: 1%;
+	margin-bottom: 1%;
 }

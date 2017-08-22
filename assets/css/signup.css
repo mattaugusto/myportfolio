@@ -54,7 +54,7 @@ input[type=text], input[type=password]{
 }
 
 /* ERROS */
-#cepError, #emailError, #senhaError, #senharepeatError {
+#cepError, #nomeError,  #emailError, #profissaoError, #senhaError, #senharepeatError {
     display: none;
     color: rgba(255, 0, 0, 0.68);
     font-family: sans-serif;

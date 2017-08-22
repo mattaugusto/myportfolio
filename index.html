@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset = "UTF-8">
-    <title>JS.W3</title>
+    <title>HOME</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,8 +10,6 @@
     <!--<script src="node_modules/jquery/dist/jquery.min.js"></script>-->
     
     <!--<script type="text/javascript" src="dist/bundle.js"></script>-->
-
-
   </head>
   <body>
     <header class="w3-container w3-light-grey">
@@ -20,29 +18,46 @@
       <div class="w3-bar w3-light-grey">
         <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
         <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-user-o"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+        <a href="submit.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
         <a href="signin.html" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i></a>
       </div>
 
     </header>
     <div class="w3-card w3-green w3-col m12 l12" id="first-card">
-      <p id="card-text">MyPortfolio is a clean way to show your work and how you work. 
-        If you are a programmer or a photographer, this site is especially for you. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu nunc nulla. Integer sagittis orci urna, eget fringilla leo aliquam eget. Fusce facilisis, justo convallis consequat maximus, mauris velit varius leo, sed tristique quam lacus tempor ex. Vestibulum in placerat neque, sit amet volutpat arcu. Curabitur et risus turpis. Aliquam blandit vehicula placerat. Integer at iaculis lorem. Etiam tempor lacus sit amet nisl pharetra, ut porta erat semper. Fusce eros mi, maximus auctor blandit quis, commodo iaculis urna. Proin sed ultricies risus, id varius enim. Aliquam in ullamcorper mauris. Maecenas ullamcorper lacinia tellus sit amet mattis. Mauris non venenatis lorem. Morbi orci sapien, hendrerit et molestie sed, viverra et est. Maecenas ultricies leo odio, et aliquam enim faucibus at.
+      <p id="card-text">
+      MyPortfolio é um aplicativo de currículos e portfolios feito especialmente para Desenvolvedores Web e Fotógrafos. Nós, criadores, desenvolvedores e fotógrafos acreditamos que essas duas profissões têm muitos detalhes em comum, como a criatividade e a inovação, 
+      o conhecimento de espaço e a organização. Então, por esses motivos decidimos criar um espaço somente para vocês, profissionais criativos do mundo das interfaces e imagens, para proporcionarmos uma experiência totalmente focada nas suas necessidades.
       </p>
+      <p> Aqui temos as features que nosso aplicativo oferece para cada uma das profissões: </p>
     </div>
-        
-    <div class="w3-third w3-card w3-teal" id="second-card">
-      <p id="card-text"><i class="fa fa-code fa-4x w3-animate-left"></i>As a programmer you can...</p>
-      <p> Nam nec eros mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse condimentum semper mattis. Aliquam erat volutpat. Donec non sollicitudin velit. Sed et turpis nisl. Nulla nec nisl ut arcu pharetra pulvinar at ac tortor. Donec efficitur tortor erat.</p> 
+    <div class="w3-row">
+      <div class="w3-col m6 l6 w3-teal w3-container">
+        <div class="w3-row">
+          <div id="img" class="w3-col m3 l3 w3-teal w3-container">
+            <img src="assets/img/icons/programmer_resize.png" alt="Desenvolvedor" class="w3-animate-left">
+          </div>
+          <div class="w3-col m9 l9 w3-teal w3-container">
+            <p> • Para um Desenvolvedor Web, MyPortfolio oferece a possibilidade de postar seus aplicativos, sites e ilustrações. Também é possível criar
+            pastas e coleções onde serão organizados seus arquivos postados, e adicionar de seus dados de contato caso alguém se interesse
+            pelo seu trabalho. 
+            </p>
+          </div>
+        </div>
+      </div>  
+      <div class="w3-col m6 l6 w3-pink w3-container">
+        <div class="w3-row">
+          <div class="w3-col m9 l9 w3-pink w3-container">
+            <p> • Para um Fótógrafo, MyPortfolio oferece a possibilidade de postar suas fotos, criar e organizar albuns, como também criar apresentações. MyPortfolio também possibilita linkar sua conta ao Instagram, Flickr e Facebook, e adicionar seus dados de contato caso alguém se interesse pelo seu trabalho.
+            </p>
+          </div>
+          <div id="img" class="w3-col m3 l3 w3-pink w3-container">
+            <img src="assets/img/icons/photographer_resize.png" alt="Fotógrafo" class="w3-animate-right">
+          </div>
+        </div> 
+      </div>
     </div>
-
-    <div class="w3-third w3-card w3-pink" id="third-card"> 
-      <p id="card-text">As a photographer you can...<i class="fa fa-camera-retro fa-4x w3-animate-right" id="camera"></i> </p>
-      <p> Nam nec eros mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse condimentum semper mattis. Aliquam erat volutpat. Donec non sollicitudin velit. Sed et turpis nisl. Nulla nec nisl ut arcu pharetra pulvinar at ac tortor. Donec efficitur tortor erat.</p> 
-    </div>
-    <footer class="w3-container w3-light-grey">
-      <p>Footer information goes here</p>
+    <footer class="w3-container w3-light-grey w3-center">
+      <p>MyPortfolio</p>
     </footer>
 
    <script type="text/javascript" src="assets/js/index.js"></script>

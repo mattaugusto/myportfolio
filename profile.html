@@ -2,12 +2,11 @@
 <html>
   <head>
     <meta charset = "UTF-8">
-    <title>JS.W3</title>
+    <title>PERFIL</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/profile.css">
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript"> </script>
   </head>
   <body>
@@ -16,47 +15,29 @@
       <h6 class="w3-center w3-animate-left" id="subtitle">PERFIL</h6>
       <div class="w3-bar w3-light-grey">
         <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
-            <a href="profile.html" class="w3-bar-item w3-button w3-blue"><i class="fa fa-user-o"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+            <a href="profile.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-user-o"></i></a>
+            <a href="submit.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
             <a href="signin.html" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i></a>
      </div>
     </header>
-
-    <div class="w3-row w3-card w3-blue" id="first-card">
-      
-      <div class="w3-third w3-card-4 w3-animate-opacity">
-        <img src="assets/img/resize/developer.jpg" id="photo"
-        onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-opacity"> 
-        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-          <div class="w3-modal-content w3-animate-zoom"> 
-            <img class="w3-modal-content" src="assets/img/origin/pexels-photo-160107.jpeg">
+    <div class="w3-teal w3-row">
+      <div class="w3-col m2 l2 w3-teal"><p></p></div>
+      <div id="ct" class="w3-col m8 l8 w3-teal w3-container w3-center">
+        <div class="w3-teal w3-row">
+          <div class="w3-col m6 l6 w3-teal w3-container w3-animate-left w3-center"> 
+            <img src="assets/img/icons/programmer.png" alt="Desenvolvedor" class="w3-hover-opacity">
+            <p class="w3-animate-left"> Desenvolvedor Web</p>
           </div>
-        </div> 
-        <div class="w3-container">
-          <h5>Desenvolvedor</h5>    
-        </div> 
-      </div>
-
-      <div class="w3-third w3-card-4 w3-animate-opacity" id="photocard" >
-        <img src="assets/img/resize/photographer.jpg" id="photo"
-        onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-opacity"> 
-        <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
-          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-          <div class="w3-modal-content w3-animate-zoom"> 
-            <img class="w3-modal-content" src="assets/img/origin/pexels-photo-108148.jpeg">
+          <div class="w3-col m6 l6 w3-teal w3-container w3-animate-left w3-center">
+            <img src="assets/img/icons/photographer.png" alt="Fotógrafo" class="w3-hover-opacity">
+            <p class="w3-animate-left"> Fotógrafo </p>
           </div>
         </div>
-        <div class="w3-container">
-          <h5>Fotógrafo</h5>    
-        </div>       
-      </div> 
-
+        </div>
+      <div class="w3-col m2 l2 w3-teal"><p></p></div>
     </div>
-      
-    <footer class="w3-container w3-light-grey">
-      <p>Footer information goes here</p>
+    <footer class="w3-container w3-light-grey w3-center">
+      <p>MyPortfolio</p>
     </footer>
   </body>
 </html>

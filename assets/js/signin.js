@@ -1,36 +1,38 @@
 // LOGIN
 const email = document.querySelector('#email')
 const senha = document.querySelector('#senha')
+const incorretos = document.querySelector('#incorretos')
 const entrar = document.querySelector('#entrar')
 
 // AÇÃO BOTÃO ENTRAR
 entrar.onclick = () => {
 	let emailverify = email.value
   	let senhaverify = senha.value
-	if(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(emailverify))
-  	{
-	    email.style.border = '1px solid green'
-	    email.style.backgroundColor = 'rgba(134, 244, 66, .1)'
-	    emailError.style.display = 'none'
-  	}
-  	else
+
+  	/* TRATAMENTO DA STRING EMAIL */
+	if(!/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(emailverify))
   	{
 	    email.style.border = '1px solid #f00'
 	    email.style.backgroundColor = 'rgba(255, 0, 0, .1)'
-	    emailError.style.display = 'block'
-	    emailError.style.outline = 'none'
-  	}
-  	if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(senhaverify))
-  	{
-	    senha.style.border = '1px solid green'
-	    senha.style.backgroundColor = 'rgba(134, 244, 66, .1)'
-	    pass.style.display = 'none'
-  	}
-  	else
-  	{
 	    senha.style.border = '1px solid #f00'
 	    senha.style.backgroundColor = 'rgba(255, 0, 0, .1)'
-	    senhaError.style.display = 'block'
-	    senhaError.style.outline = 'none'
+	    incorretos.style.display = 'block'
+	    incorretos.style.outline = 'none'
+
   	}
+
+  	/* TRATAMENTO DA STRING SENHA */
+  	if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(senhaverify))
+  	{
+	    email.style.border = '1px solid #f00'
+	    email.style.backgroundColor = 'rgba(255, 0, 0, .1)'
+	    senha.style.border = '1px solid #f00'
+	    senha.style.backgroundColor = 'rgba(255, 0, 0, .1)'
+	    incorretos.style.display = 'block'
+	    incorretos.style.outline = 'none'
+  	}
+
+  	/* ADMIN */
+  	if((emailverify == 'admin@gmail.com') && (senhaverify == 'admin')) 
+  		window.location.assign('admin.html');
 }

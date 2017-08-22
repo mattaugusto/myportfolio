@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset = "UTF-8">
-	    <title>JS.W3</title>
+	    <title>CADASTRE-SE</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,12 +24,15 @@
 			 			
 			 			<label>Nome</label>
 						<input id="nome" type="text" class="w3-input" type="text" maxlength="60">
+						<div id="nomeError">Nome informado é inválido.</div>
 
 						<select id="profissao" class="w3-select" name="option">
 							<option value="" disabled selected>Profissão</option>
 							<option value="Desenvolvedor">Desenvolvedor</option>
 							<option value="Fotógrafo">Fotógrafo</option>
 						</select>
+						<div id="profissaoError">É necessário informar a profissão.</div>
+
 						<p>
 						<label>Email</label>
 						<input id="email" type="text" class="w3-input" type="text" maxlength="60">
@@ -37,7 +40,7 @@
 						
 						<label>Senha</label>
 						<input id="senha" type="password" class="w3-input" type="text" maxlength="60">
-						<div id="senhaError">Senha precisa ter no mínimo uma letra maiúscula e um número.</div>
+						<div id="senhaError">Senha precisa ter no mínimo 8 caracteres, contendo uma letra maiúscula e um número.</div>
 						
 						<label>Confirme a Senha</label>
 						<input id="confirmarsenha" type="password" class="w3-input" type="text" maxlength="60">
@@ -78,8 +81,8 @@
 				</div>
 		 	</div>
 	</body>
-	<footer class="w3-container w3-light-grey">
-      <p>Footer information goes here</p>
+	<footer class="w3-container w3-light-grey w3-center">
+      <p>MyPortfolio</p>
     </footer>
     <script type="text/javascript" src="assets/js/signup.js"></script>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>ADMIN</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.15/css/theme.blue.css"
+		<link rel="stylesheet" href="assets/css/signin.css">
+	</head>
+	<body>
+		<header class="w3-container w3-light-grey">
+	      	<h1 class="w3-center w3-animate-left" id="title">MyPortfolio</h1>
+	      	<h6 class="w3-center w3-animate-left" id="subtitle">ADMIN</h6>
+	      	<div class="w3-bar w3-light-grey">
+		        <a href="signin.html" class="w3-bar-item w3-button w3-blue"><i class="fa fa-arrow-left"></i></a>
+		    </div> 
+    	</header>
+    		<div class="w3-blue w3-row">
+    			<div class="w3-col m1 l1 w3-blue"><p></p></div>
+			 	<div id="ct" class="w3-col m10 l10 w3-white w3-animate-left">
+			 		<h1 class="w3-center w3-animate-left" id="title">Usuários Cadastrados</h1>
+			 		<table id="usuarios" class="tablesorter tablesorter-blue">
+						<thead>
+							<tr>
+								<th>Nome</th>
+								<th>Profissão</th>
+								<th>Email</th>
+								<th>Senha</th>
+								<th>Telefone</th>
+								<th>CEP</th>
+								<th>Rua</th>
+								<th>UF</th>
+								<th>Cidade</th>
+							</tr>	
+					  	</thead>
+					  	<tbody id="tbody">
+					  	</tbody>
+					</table>
+						
+					
+              	</div>
+              	<div class="w3-col m1 l1 w3-blue"><p></p></div>
+				</div>
+		 	</div>
+	</body>
+	<footer class="w3-container w3-light-grey w3-center">
+      <p>MyPortfolio</p>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.15/js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="assets/js/admin.js"></script>
+</html>
